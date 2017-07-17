@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>ng-web</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,8 +24,253 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>ng-web Presentation</section>
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Demo</li>
+						<li>Overview</li>
+						<ul>
+							<li>Architecture</li>
+							<li>Tools / Libraries Used</li>
+							<li>Devlopment Process (Demo)</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<section>Quick Demo</section>
+					<section>We both are the most creative designers</section>
+					<section>Apologies for the UI design</section>
+					<section>
+						<div class="stretch">
+							<iframe data-src="http://localhost:8081" width="100%" height="100%"></iframe>
+						</div>
+					</section>
+					<section>
+						<div class="stretch">
+							<iframe data-src="http://localhost:6060" width="100%" height="100%"></iframe>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>Architecture</h2>	
+					<img data-src="https://camo.githubusercontent.com/655fdfe6e77bf59fde4623dc77a0e8962f6effa5/687474703a2f2f692e696d6775722e636f6d2f4e4a574c58487a2e706e67" />
+				</section>
+				<section>
+					<section>Tools / Libraries / Languages / Concepts used</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>Version Control</td>
+									<td>git</td>
+									<td>TFVC</td>
+								<tr>
+								<tr>
+									<td>IDE / Code Editor</td>
+									<td>vscode</td>
+									<td>Visual Studio</td>
+								<tr>
+								<tr>
+									<td>Package Manager</td>
+									<td>npm (for everything)</td>
+									<td>npm (for devtools) and bower (for libraries used by web app)</td>
+								<tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>Language</td>
+									<td>ES2015</td>
+									<td>ES5 (JavaScript)</td>
+								<tr>
+								<tr>
+									<td>Transpiler</td>
+									<td>babel</td>
+									<td>Was not required</td>
+								<tr>
+								<tr>
+									<td>Module Bundler</td>
+									<td>webpack with ES2015 Modules</td>
+									<td>roughly requirejs + AMD Modules + gulp</td>
+								<tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>Language</td>
+									<td>ES2015</td>
+									<td>ES5 (JavaScript)</td>
+								<tr>
+								<tr>
+									<td>Dev Web Server</td>
+									<td>webpack dev server</td>
+									<td>http-server, ionic dev server</td>
+								<tr>
+								<tr>
+									<td>Linting</td>
+									<td>eslint</td>
+									<td>Not used</td>
+								<tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>SPA</td>
+									<td>react + react-router</td>
+									<td>angular + angular-router</td>
+								<tr>
+								<tr>
+									<td>Component (lego)</td>
+									<td>react + mag-component</td>
+									<td>angular (directives)</td>
+								<tr>
+								<tr>
+									<td>Template Language</td>
+									<td>jsx, react-templates</td>
+									<td>angular html templates dsl</td>
+								<tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>State management</td>
+									<td>redux, react-redux</td>
+									<td>angular (services) + custom</td>
+								<tr>
+								<tr>
+									<td>Async</td>
+									<td>rxjs / xstream, redux-cycle</td>
+									<td>angular promises</td>
+								<tr>
+								<tr>
+									<td>http</td>
+									<td>redux-cycle, @cyclejs/http (superagent)</td>
+									<td>angular (http)</td>
+								<tr>							
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>Unit Testing</td>
+									<td>jest</td>
+									<td>karma? used very less</td>
+								<tr>
+								<tr>
+									<td>end to end testing</td>
+									<td>?</td>
+									<td>protractor (not used)</td>
+								<tr>
+								<tr>
+									<td>Dependency Injection Container</td>
+									<td>inversify</td>
+									<td>angular (hard baked)</td>
+								<tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Tools / Libraries used</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th>Tool / Library</th>
+									<th>Similar to</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<tr>
+									<td>Paradigms</td>								
+									<td>Declarative, Functional, Functional Reactive</td>
+									<td>Impertaive, OO (Class Based)</td>
+								<tr>
+								<tr>
+									<td>widget library, css</td>
+									<td>bootstrap, react-bootstrap, material-ui??</td>
+									<td>?</td>
+								<tr>
+								<tr>
+									<td>Stlyes pre-processor</td>
+									<td>less</td>
+									<td>None - vanilla css</td>
+								<tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					Development Process Demo
+				</section>
+				<section>
+					Questions? 
+				</section>
+				<section>
+					Thank you 
+				</section>
 			</div>
 		</div>
 
